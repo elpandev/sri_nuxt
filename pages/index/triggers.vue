@@ -10,6 +10,7 @@
       <input v-model="$user.triggers.invoice.url" type="text" placeholder="url">
       <select v-model="$user.triggers.invoice.method">
         <option value="POST">POST</option>
+        <option value="PUT">PUT</option>
       </select>
     </section>
 
