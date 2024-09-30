@@ -1,11 +1,9 @@
 interface IUser {
-  key:      string
+  token:    string
   name:     string
   email:    string
   password: string
-  triggers: {
-    invoice: ITrigger
-  }
+  trigger_invoice: ITrigger
 }
 
 interface ITrigger {

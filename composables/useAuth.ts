@@ -52,12 +52,33 @@ export function useAuth() {
     return undefined
   }
 
+  async function update() {
+    await fetch(`${runtimeConfig.public.apiBase}/user`, {
+      method: 'PUT',
+      body: JSON.stringify($user.value),
+      headers: headers(),
+    })
+  }
+
+  async function update_token() {
+    const response = await fetch(`${runtimeConfig.public.apiBase}/user/update/token`, {
+      method: 'PUT',
+      headers: headers(),
+    })
+
+    const payload = await response.json()
+
+    $user.value.token = payload.token
+  }
+
   return {
     headers,
     login,
     register,
     logout,
     get_auth_user,
+    update,
+    update_token,
     $user,
   }
 }
