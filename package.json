@@ -9,12 +9,10 @@
     "preview": "nuxt preview",
     "postinstall": "nuxt prepare"
   },
-  "dependencies": {
-    "nuxt": "^3.13.0",
-    "vue": "latest",
-    "vue-router": "latest"
-  },
   "devDependencies": {
-    "sass": "^1.79.4"
+    "nuxt": "^3.8.2",
+    "sass": "^1.69.6",
+    "vue": "^3.4.3",
+    "vue-router": "^4.2.5"
   }
 }
