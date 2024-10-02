@@ -5,6 +5,7 @@
       <NuxtLink to="/auth/register">register</NuxtLink>
       <NuxtLink to="/auth/logout">logout</NuxtLink>
       <NuxtLink to="/triggers">triggers</NuxtLink>
+      <NuxtLink to="/tracking">tracking</NuxtLink>
     </nav>
 
     <NuxtPage />
