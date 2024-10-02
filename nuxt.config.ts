@@ -12,11 +12,9 @@ export default defineNuxtConfig({
     }
   },
 
-  runtimeConfig: {
-    public: {
-      apiBase: 'http://127.0.0.1:8787'
-    }
-  },
+  css: [
+    '~/assets/scss/variables.scss'
+  ],
 
   compatibilityDate: '2024-09-08',
 })
